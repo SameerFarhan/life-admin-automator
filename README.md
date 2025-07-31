@@ -13,4 +13,3 @@ An app that helps you manage and automate life’s small but important tasks —
 - Backend: Node.js with Express
 - Data Storage: JSON file (expandable to MongoDB in future)
 
-## 🗂 Project Structure
