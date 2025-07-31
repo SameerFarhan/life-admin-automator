@@ -1,29 +1,49 @@
 body {
   font-family: Arial, sans-serif;
   max-width: 600px;
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 20px;
-  background: #f9f9f9;
 }
 
-h1 {
-  text-align: center;
-}
-
-form {
+#task-form {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-ul {
-  list-style-type: none;
+#task-form input {
+  flex: 1;
+  padding: 8px;
+}
+
+#task-list {
+  list-style: none;
   padding: 0;
 }
 
-li {
-  padding: 10px;
-  background: #e0e0e0;
-  margin-bottom: 10px;
-  border-radius: 5px;
+#task-list li {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
 }
